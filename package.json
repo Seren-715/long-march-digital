@@ -1,0 +1,11 @@
+{
+  "name": "long-march-digital",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "数字长征沙盘：以红军长征为主题的互动网页（AI 编程赛道作品）",
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node check.mjs"
+  }
+}
