@@ -62,7 +62,8 @@ try {
     await page.evaluate(() => scrollTo(0, 0));
     await page.click('#hero-novel');
     await page.click('#vn-skip');
-    for (let i = 0; i < 400; i++) {
+    // 快进时每张史料卡仍停留不到一秒，全程约一分钟；按时间给足 4 分钟
+    for (const end = Date.now() + 240000; Date.now() < end;) {
       const st = await page.evaluate(() => { const q = (s) => document.querySelector(s); return !q('#vn-end').hidden ? 'end' : !q('#vn-choices').hidden ? 'choice' : 'run'; });
       if (st === 'end') break;
       if (st === 'choice') { await page.locator('#vn-choices .vn-choice').first().click(); await page.click('#vn-skip').catch(() => {}); }
