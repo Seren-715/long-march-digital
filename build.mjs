@@ -62,7 +62,7 @@ for (const q of facts.numberQuestions) {
 for (const c of facts.closingQuotes) checkQuote(use(c.ref), c.quote, 'closingQuotes');
 use('jiangtaibao_spirit'); use('wuqi_distance_method'); use('jiangtaibao_meaning');
 
-// ---------- 2b. galgame《我的长征》：史料卡逐字取自原文，虚构台词不许出现数字 ----------
+// ---------- 2b. 沉浸式互动剧情《我的长征》：史料卡逐字取自原文，虚构台词不许出现数字 ----------
 const SPRITES = new Set(Object.values(vnCast).flatMap((c) => [c.sprite, ...Object.values(c.alt || {})]).filter(Boolean));
 const vnImages = new Set([...SPRITES]);
 const spiritsUsed = {};

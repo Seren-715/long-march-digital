@@ -438,7 +438,7 @@ footer.foot{padding-block:24px 40px;font-size:.8125rem;color:var(--faint);border
 @media (max-width:980px){.story-entry{grid-template-columns:minmax(0,1fr)}}
 @media (max-width:560px){.acts{grid-template-columns:minmax(0,1fr)}.act{min-height:72px}}
 
-/* —— galgame 舞台（固定夜色配色）—— */
+/* —— 互动剧情舞台（固定夜色配色）—— */
 :root{--vn-ink:#EEE7D8;--vn-muted:#A9A498;--vn-red:#E2533E;--vn-gold:#E9C47C;--vn-line:rgba(238,231,216,.16);--vn-panel:rgba(10,12,13,.8);--vn-paper:#E8DFC9;--vn-paper-ink:#2A241C}
 body.vn-open{overflow:hidden}
 .vn{position:fixed;inset:0;z-index:100;background:#060708;color:var(--vn-ink);color-scheme:dark;outline:none;user-select:none;-webkit-user-select:none}

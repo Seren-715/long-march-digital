@@ -1,4 +1,4 @@
-// ---------- 壹 · 我的长征（galgame 播放器）----------
+// ---------- 壹 · 我的长征（沉浸式互动剧情播放器）----------
 // 由 build.mjs 插入 app.js 的 IIFE 内部，可直接使用 D、F、$、el、state、saveState、store、march、openRef、reduceMotion 等。
 const vnUI = (() => {
   const V = D.vn, SC = V.scenes, CAST = V.cast, IMG = V.img;
